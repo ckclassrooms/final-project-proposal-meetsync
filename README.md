@@ -3,14 +3,16 @@ final-project-proposal-meetsync created by GitHub Classroom
 
 What does your application do?
 
-Current Google/Outlook functionality to create a meeting for multiple people with multiple schedules is a hassle. Our application aims to synchronise calendars of 
-members who would be added to a meeting according to when they are available. Accessing all the calendar information in one spot will make creating and making 
-a decision on scheduling the meeting easier. As per our knowledge, such an application does not exist as of now. 
+The current Google Calender functionality to create a meeting for multiple people with multiple schedules is a hassle. Users have to add multiple calenders which they continue to have access to even after group tasks are scheduled. Our application aims to synchronize calendars of members who would be added to a meeting according to when they are available. Accessing all the calendar information in one spot will make creating and making 
+a decision on scheduling the meeting easier. Further you would not have access to other users' data after scheduling unlike added calenders on Google Calender which have to be deleted. As per our knowledge, such an application does not exist as of now. 
 
 
 What makes it different than a CRUD app? I.e., what functionality does it provide that is not just a user interface layer on top of a database of user information, and the ability to view / add to / change that information?
 
-Along with the CRUD functionality (adding users to a database, accessing their information, etc), our application will also use the Google calendar API to access the calendar information of the members who want to be added to the same meeting, enabling them to track their meetings and get prompt notifications for future meetings also. 
+1. Along with the CRUD functionality (adding users to a database, accessing their information, etc), our application will also use the Google Calendar API to access the calendar information of the members who want to be added to the same meeting, enabling us to track their meetings. 
+2. We would then collate information from multiple users to find a best fit for their meeting requirements (The amount of hours or the day they would like to schedule the meeting for).
+3. We also add features to authenticate users via OAuth , and a feature to allow them to use a common link to join their group to schedule meetings
+
 
 What security and privacy concerns do you expect you (as developers) or your users to have with this application?
 
