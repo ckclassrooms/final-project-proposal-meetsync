@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          MeetSync Loading...
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/ckclassrooms/final-project-proposal-meetsync"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          MeetSync github
         </a>
       </header>
     </div>
