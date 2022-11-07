@@ -22,3 +22,4 @@ Some security and privacy concerns we aim to achieve are:
 2. Using Authorized APIs: APIs that aren't authorized could give a hacker unwanted privileges. However, we are using the Google Calendar API which is authorized and uses RESTful principles.  
 3. Least Privilege: Our application will only access the permissions which are essential to run it smoothly, and no more. As we update our code for this application, we will perform threat modeling to ensure this.
 
+UPDATE: link to deployed app: https://meetsync.netlify.app/ 
