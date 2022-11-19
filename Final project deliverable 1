@@ -1,0 +1,11 @@
+Final project deliverable 1
+As per the MVP diagram submitted before , we have the Current App functionality as follows :
+- A Google OAuth functionality utilizing Supabase , that allows a user to Sign in/Sign Up.This redirects the user to the logged in version of the site. 
+- The logged in version of the site has a Nav Bar which contains tabs to Join a Team , a redirect to Google meet along with a Home and Logout Button.
+- The Join A Team page currently contains a button to generate a QR Code. Upon scanning this QR Code the user is redirected to a page to Create a Meeting. The Create A Meeting page allows the user to pick a date and time for the meeting.
+- We have also created the backend in Supabase to populate future users belonging to a particular team.
+The app is currently live at : https://meetsync.netlify.app/
+
+Future Steps : 
+Calendar API : Utilize Google Calendar for the signed users to gain access to their current calendar.
+Team Grouping : Our current QR Code redirects to one page. To make this viable we want to generate at least 3 QR Codes over a period of time.
