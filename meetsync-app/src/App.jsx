@@ -3,6 +3,8 @@ import "./App.css";
 import { AddRequestForm, RequestList } from './components/ServiceRequest'
 import Nav from './components/Navbar'
 import Landing from './components/Landing'
+import Qrcode from './components/Qrcode'
+import Createmeet from './components/Createmeet'
 //import RequestChart from "./components/Chart";
 import { supabase } from './supabaseClient'
 import {
@@ -175,8 +177,8 @@ function App() {
       <Routes>
         {/* Allow only authenticated user to proceed to RequestList, AddRequestForm, RequestChart else Navigate to landing component */}
         <Route path="/" element={<Landing />} />
-        <Route path="/list" element={<RequestList completeRequest={completeRequest} removeRequest={removeRequest} requests={requests} />} />
-        <Route path="/add" element={<AddRequestForm addRequest={addRequest} />} />
+        <Route path="/jointeam" element={<Qrcode />} />
+        <Route path="/createmeeting" element={<Createmeet />} />
         {/* <Route path="/chart" element={<RequestChart requests={requests} />} /> */}
       </Routes>
     </>
