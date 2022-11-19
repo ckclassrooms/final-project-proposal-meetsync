@@ -5,6 +5,8 @@ As per the MVP diagram submitted before , we have the Current App functionality 
 - The Join A Team page currently contains a button to generate a QR Code. Upon scanning this QR Code the user is redirected to a page to Create a Meeting. The Create A Meeting page allows the user to pick a date and time for the meeting.
 - We have also created the backend in Supabase to populate future users belonging to a particular team.
 The app is currently live at : https://meetsync.netlify.app/
+The video describing how the MVP works is at this Google Drive link (visible only to the Professor's uic id) : https://drive.google.com/file/d/1ChZial-Z4ynyU92wfS7W4tQKJoTY8sV8/view?usp=share_link
+Instead of a screencast , this is a realtime video to allow us to show the realtime functionality of the QR Code Scanning !
 
 Future Steps : 
 Calendar API : Utilize Google Calendar for the signed users to gain access to their current calendar.
