@@ -31,7 +31,7 @@ function Qrcode() {
                 onkeydown={GenerateQRCode}/> */}
 
             {/* <Button variant="contained" onClick={GenerateQRCode}>Generate</Button> */}
-            <button onClick={GenerateQRCode}>Press here</button>;
+            <button onClick={GenerateQRCode}>Press here</button>
             {qr && <>
                 <img src={qr} />
                 
