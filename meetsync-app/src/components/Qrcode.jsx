@@ -6,7 +6,7 @@ function Qrcode() {
     const [url, setUrl] = useState('')
     const [qr, setQr] = useState('')
     const GenerateQRCode = () => {
-        QRCode.toDataURL("https://meetsync.netlify.app/createmeeting", {
+        QRCode.toDataURL("https://meetsync.netlify.app/createmeet", {
             width: 80,
             height:80,
             margin: 2,
