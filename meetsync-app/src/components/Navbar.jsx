@@ -26,7 +26,9 @@ function Nav({session, setSession}) {
         <li className="nav-item"><NavLink className={({ isActive }) => "nav-link " + (isActive ? " active" : "")}
             to="/jointeam">Join Your Team!</NavLink></li>
         <li className="nav-item"><NavLink className={({ isActive }) => "nav-link " + (isActive ? " active" : "")}
-            to="/createmeeting">Create meeting</NavLink></li>  
+            to="/createmeet">Create meeting</NavLink></li> 
+        <li className="nav-item"><NavLink className={({ isActive }) => "nav-link " + (isActive ? " active" : "")}
+            to={{pathname:"//meet.google.com" }}target = "_blank">Google meet</NavLink></li>  
         <li className="nav-item ms-auto"><button className="btn btn-primary m-1" id='logoutSubmit' onClick={()=>logoutSubmit()}>Logout</button></li>       
     </ul>)
     }
