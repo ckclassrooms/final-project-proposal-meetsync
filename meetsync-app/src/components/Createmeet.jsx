@@ -1,5 +1,10 @@
 import React from 'react'
-
+import { Navigate } from "react-router-dom";
+function handleSubmit(e) {
+    e.preventDefault();
+    console.log('You clicked submit.');
+    window.location.href = "/event"
+  }
 function Landing() {
     return (
         <>
@@ -18,10 +23,16 @@ function Landing() {
                         <label>Select a Time</label>
                         <input id="time" type="time" name="time" className="form-control"/>
                     </div>
-
+                    <div className="form-outline mb-4">
+                        <label>GCal ID</label>
+                        <input text="text" type="time" name="time" className="form-control"/>
+                    </div>
                     {/* <button type="button" onClick={handleSubmit} className="btn btn-primary m-1" id="create-req-btn">Submit</button> */}
 
                 </form>
+                <form onSubmit={handleSubmit}>
+      <button type="submit">Submit</button>
+    </form>
             </div>
 
         </>
