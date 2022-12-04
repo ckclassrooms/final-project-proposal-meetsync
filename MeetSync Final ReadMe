@@ -16,4 +16,7 @@ Our final project for CS 484 utilises the following technologies
  - Finally if none of the users are busy they can head into the Google meet Page - which redirects them to schedule a meeting.
  
  Video describing this project is at this Drive Link (visible only to Professor Kanich's UIC ID:   https://drive.google.com/file/d/1EYprzjdubrsh692sbMfxKONiDJoo6wH8/view?usp=sharing
+ 
+ Overall we have implemented an app that goes above CRUD functionality and collates information from users to query the Authorised Google Calendar API, deploying to Netlify !.
+ Link to our deployed app : https://meetsync.netlify.app/
  Thank You !
