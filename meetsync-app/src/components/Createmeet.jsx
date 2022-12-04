@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { gapi } from "gapi-script"; 
 
 
-function Landing({session}) {
+function Landing() {
 
      //google api keys and tokens 1.0
      const [events, setEvents] = useState([]);
@@ -13,7 +13,7 @@ function Landing({session}) {
      const calendarID = import.meta.env.VITE_APP_CALENDAR_ID;
      let calendarID2 = "";
      const apiKey = import.meta.env.VITE_APP_GOOGLE_API_KEY;
-     const accessToken = session.provider_token;
+     const accessToken = import.meta.env.VITE_APP_GOOGLE_ACCESS_TOKEN;
  
      //let calendararray = [calendarID, calendarID2];
  
