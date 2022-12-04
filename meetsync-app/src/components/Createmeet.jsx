@@ -88,7 +88,7 @@ function handleSubmit(e) {
     const events2 = getEvents2(calendarID2, apiKey);
     setEvents2(events2);
     var strText1 = document.getElementById("datetime").value;
-    console.log(new Date(strText1).getDate());
+    console.log(new Date(strText1).getTime());
    
   }
 
@@ -104,14 +104,14 @@ function handleSubmit(e) {
                     <div className="form-outline mb-4">
                         <label>Select a Date and time </label>
                         <input id="datetime" type="datetime-local" name="datetime" className="form-control"/>
-                        
                     </div>
                     {/* <div className="form-outline mb-4">
                         <label>Select a Time</label>
                         <input id="time" type="time" name="time" className="form-control"/>
                     </div> */}
                     <div className="form-outline mb-4">
-                        <label>GCal ID</label>
+
+                        <label>GCal ID</label> <p>Do you need a dummy gcal id ? c_c2167a71c53be2ad29b75b0019b140160caa8384ba5db7536c3dd11217a4f4e2@group.calendar.google.com</p>
                         <input id="text" type="password" name="text" className="form-control"/>
                     </div>
                     {/* <button type="button" onClick={handleSubmit} className="btn btn-primary m-1" id="create-req-btn">Submit</button> */}
@@ -133,8 +133,8 @@ function handleSubmit(e) {
                 {events?.map((event) => (
                     <li key={event.id} className="flex justify-center">
                         {/* <Event description={event.summary} /> */}
-                        <p> User 1 {event.summary}  {event.start.dateTime} 
-                        {new Date(document.getElementById("datetime").value).getDate() == (new Date(event.start.dateTime).getDate()+1) ? "   Busy" : "   Not Busy"}</p>
+                        <p> User 1 {event.summary} {event.start.dateTime}
+                        {new Date(document.getElementById("datetime").value).getTime()== new Date(event.start.dateTime).getTime() ? "   Busy" : "   Not Busy"}</p>
                     </li>
                 ))}
             </ul>
@@ -142,7 +142,7 @@ function handleSubmit(e) {
                 {events2?.map((event2) => (
                     <li key={event2.id} className="flex justify-center">
                         <p>User 2 {event2.summary}  {event2.start.dateTime} 
-                        {new Date(document.getElementById("datetime").value).getDate() == (new Date(event2.start.dateTime).getDate()) ? "   Busy" : "   Not Busy"}
+                        {new Date(document.getElementById("datetime").value).getTime() == new Date(event2.start.dateTime).getTime() ? "   Busy" : "   Not Busy"}
                         </p>
                     </li>
                 ))}
