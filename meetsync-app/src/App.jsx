@@ -180,8 +180,8 @@ function App() {
         {/* Allow only authenticated user to proceed to RequestList, AddRequestForm, RequestChart else Navigate to landing component */}
         <Route path="/" element={<Landing />} />
         <Route path="/jointeam" element={<Qrcode />} />
-        <Route path="/createmeet" element={<Createmeet />} />
-        <Route path="/event" element={<Event />} />
+        <Route path="/createmeet" element={<Createmeet session={session}/>} />
+        <Route path="/event" element={<Event session={session} />} />
         {/* <Route path="/chart" element={<RequestChart requests={requests} />} /> */}
       </Routes>
     </>
