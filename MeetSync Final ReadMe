@@ -1,0 +1,19 @@
+Final Project Report for CS 484 - MeetSync
+
+Our final project for CS 484 utilises the following technologies 
+- an OAuth Screen for Login that utilises Supabase,
+- A QR Code generator to redirect to the Time Picker page,
+- This allows a user to pick a date time and input their Google Calendar ID. (This is their publicly available ID  for any public Calendar)
+  
+  Steps to get your own public Calendar ID: 
+   Go into Calendar->Select your calendar (make sure it's public)->Settings and Sharing->Integrate Calendar.
+   Link to the same steps: https://docs.simplecalendar.io/find-google-calendar-id/
+   
+- On submitting this information their Google Calendar events are fetched and stored via a react UseState, each event is mapped to screen.
+  You can see the multiple events listed for multiple users along with if their meeting begins at the picked time , i.e., if they are busy at the time.
+  Currently we have one existing user in the team, and a visiting user can enter their own Calendar ID to compare Calendars.
+  
+ - Finally if none of the users are busy they can head into the Google meet Page - which redirects them to schedule a meeting.
+ 
+ Video describing this project is at this Drive Link (visible only to Professor Kanich's UIC ID:   https://drive.google.com/file/d/1EYprzjdubrsh692sbMfxKONiDJoo6wH8/view?usp=sharing
+ Thank You !
