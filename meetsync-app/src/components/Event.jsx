@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { gapi } from "gapi-script"; //google api import 1.0
 
-function Event({ description }) {
+function Event({ match, location  }) {
 
     //google api keys and tokens 1.0
     const [events, setEvents] = useState([]);
@@ -70,6 +70,8 @@ function Event({ description }) {
     };
 
     useEffect(() => {
+        console.log(location)
+        console.log(match)
         console.log("Called Once")
         const events = getEvents(calendarID, apiKey);
         setEvents(events);
